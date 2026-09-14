@@ -14,3 +14,6 @@ royek ini merupakan antarmuka (UI) statis untuk aplikasi Todo Dashboard. Halaman
 
 
 * **Mobile:**
+* <img width="727" height="1600" alt="Mobile Todo List" src="https://github.com/user-attachments/assets/b51a930e-0741-4870-be6d-a711f597c1d4" />
+* <img width="727" height="1600" alt="Mobile Todo List2" src="https://github.com/user-attachments/assets/8f1aa371-d2d9-4547-a88c-2fd1dcaab7cc" />
+
