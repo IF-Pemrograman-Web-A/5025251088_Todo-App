@@ -1,51 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Style Warrior - Todo App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
-
-    <header style="display: flex; justify-content: space-between; align-items: center;">
+    <header style="display: flex; justify-content: space-between; align-items: center;" role="banner">
         <h1>My Todo Dashboard</h1>
-        <button id="theme-toggle" class="btn" style="background-color: #f39c12; color: white;">Toggle Dark Mode</button>
+        <button id="theme-toggle" class="btn" style="background-color: #f39c12; color: white;" aria-label="Beralih antara mode gelap dan terang">Toggle Dark Mode</button>
     </header>
 
     <div class="layout-container">
-        <aside>
+        <aside aria-label="Bilah Samping Form Pembuatan Tugas">
             <div class="form-component">
                 <h2>Create New Todo</h2>
-                <form id="todo-form">
+                <form id="todo-form" aria-labelledby="form-heading">
                     <div class="form-group">
-                        <label for="title">Title</label>
-                        <input type="text" id="title" placeholder="What needs to be done?" required>
+                        <label for="title">Title <span aria-hidden="true">*</span></label>
+                        <input type="text" id="title" placeholder="What needs to be done?" required aria-required="true">
                     </div>
                     <div class="form-group">
-                        <label for="description">Description</label>
-                        <textarea id="description" rows="3" placeholder="Add some details..." required></textarea>
+                        <label for="description">Description <span aria-hidden="true">*</span></label>
+                        <textarea id="description" rows="3" placeholder="Add some details..." required aria-required="true"></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">Add Todo</button>
+                    <div class="form-group">
+                        <label for="image-capture">Capture Image (Opsional)</label>
+                        <input type="file" id="image-capture" accept="image/*" capture="environment" aria-label="Ambil foto dari kamera untuk tugas ini">
+                    </div>
+                    <div class="form-group">
+                        <label for="notify-time">Notification Time (Opsional)</label>
+                        <input type="datetime-local" id="notify-time" aria-label="Atur waktu notifikasi pengingat tugas">
+                    </div>
+                    <button type="submit" class="btn-submit" aria-label="Tambahkan Tugas Baru">Add Todo</button>
                 </form>
             </div>
         </aside>
 
-        <main>
-            <section class="panel-left">
+        <main role="main">
+            <section class="panel-left" aria-label="Daftar Tugas">
                 <h2>Todo List</h2>
-                <ul class="todo-list" id="todo-list"></ul>
+                <!-- aria-live memberitahu screen reader jika ada perubahan list -->
+                <ul class="todo-list" id="todo-list" aria-live="polite"></ul>
             </section>
 
-            <section class="panel-right">
+            <section class="panel-right" aria-label="Detail Tugas">
                 <h2>Todo Details</h2>
-                <div class="todo-detail-card" id="todo-detail-card">
+                <div class="todo-detail-card" id="todo-detail-card" aria-live="polite">
+                    <p style="text-align:center; color:gray;">Pilih tugas untuk melihat detail.</p>
                 </div>
             </section>
         </main>
     </div>
 
-    <footer>
+    <footer role="contentinfo">
         <p>&copy; 2026 Style Webpage. Built with HTML, CSS, & JS.</p>
     </footer>
 

@@ -11,6 +11,8 @@ Proyek ini merupakan antarmuka (UI) statis untuk aplikasi Todo Dashboard. Halama
 **Fitur Baru (E02a):** 
 Menambahkan manipulasi DOM dengan JavaScript untuk fungsionalitas Todo App (tambah tugas, edit, hapus, tandai selesai, dan toggle Dark Mode).
 
+**Fitur Baru (E03):** Menambahkan Web Storage (IndexedDB & localStorage), Media Capture untuk gambar, Service Worker untuk notifikasi pengingat, dan standar Aksesibilitas.
+
 **Preview UI**
 * **Dekstop:**
 * <img width="1917" height="863" alt="image" src="https://github.com/user-attachments/assets/d123b235-8a59-4f87-b502-ba56d78b8317" />
