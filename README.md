@@ -15,10 +15,11 @@ Menambahkan manipulasi DOM dengan JavaScript untuk fungsionalitas Todo App (tamb
 
 **Preview UI**
 * **Dekstop:**
-* <img width="1917" height="863" alt="image" src="https://github.com/user-attachments/assets/d123b235-8a59-4f87-b502-ba56d78b8317" />
+* <img width="1917" height="870" alt="image" src="https://github.com/user-attachments/assets/88ce0832-89d7-4cda-af5a-083d83cf1920" />
 
 
 * **Mobile:**
-* <img width="727" height="1600" alt="Mobile Todo List" src="https://github.com/user-attachments/assets/b51a930e-0741-4870-be6d-a711f597c1d4" />
-* <img width="727" height="1600" alt="Mobile Todo List2" src="https://github.com/user-attachments/assets/8f1aa371-d2d9-4547-a88c-2fd1dcaab7cc" />
+* <img width="727" height="1600" alt="image" src="https://github.com/user-attachments/assets/81bbac95-f696-4383-b816-b734ed33d47b" />
+* <img width="727" height="1600" alt="image" src="https://github.com/user-attachments/assets/a1d0da15-8d5e-4e49-a12e-b64d6529abcf" />
+
 
