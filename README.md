@@ -13,10 +13,19 @@ Menambahkan manipulasi DOM dengan JavaScript untuk fungsionalitas Todo App (tamb
 
 **Fitur Baru (E03):** Menambahkan Web Storage (IndexedDB & localStorage), Media Capture untuk gambar, Service Worker untuk notifikasi pengingat, dan standar Aksesibilitas.
 
+**Fitur Baru (E04):**
+* Struktur PHP modular (`config.php`, `header.php`, `menu-bar.php`, `footer.php`, `process.php`, `index.php`).
+* Navigasi menu bar terpisah untuk kategori Personal Todo dan Shared Todo.
+* Integrasi database MySQL (`todo_app`) melalui file skema `data.sql`.
+* Operasi CRUD (Create, Read, Update/Mark as Done, Delete) berbasis PHP.
+* Fitur pengunggahan gambar (*File Handling*) yang tersimpan otomatis di folder `uploads`.
+
 **Preview UI**
 * **Dekstop:**
 * <img width="1917" height="863" alt="image" src="https://github.com/user-attachments/assets/d123b235-8a59-4f87-b502-ba56d78b8317" />
 
+* **Dekstop dengan PHP:**
+* ![alt text](image.png)
 
 * **Mobile:**
 * <img width="727" height="1600" alt="Mobile Todo List" src="https://github.com/user-attachments/assets/b51a930e-0741-4870-be6d-a711f597c1d4" />
