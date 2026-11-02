@@ -1,29 +1,28 @@
 <?php 
-// Mendapatkan tipe menu aktif dari URL (default: Personal)
 $currentType = isset($_GET['type']) ? $_GET['type'] : 'Personal';
 ?>
 
 <aside>
-    <!-- Card Komponen Menu -->
+    <!-- Card Komponen Menu (Diperbaiki agar memiliki background putih dan margin) -->
     <div class="menu-bar" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 20px;">
-        <h3 style="margin-bottom: 15px; font-size: 1.1rem; color: #1a237e;">Menu</h3>
+        <h3 style="margin: 0 0 15px 0; font-size: 1.2rem; color: #1a237e; display: block;">Menu</h3>
         <div style="display: flex; gap: 10px;">
             <a href="index.php?type=Personal" 
                class="btn" 
-               style="flex: 1; text-align: center; text-decoration: none; display: inline-block; padding: 10px 8px; white-space: nowrap; font-size: 0.85rem; background-color: <?php echo ($currentType === 'Personal') ? '#3f51b5' : '#6c757d'; ?>; color: white; border-radius: 4px;">
+               style="flex: 1; text-align: center; text-decoration: none; display: block; padding: 10px 8px; white-space: nowrap; font-size: 0.85rem; background-color: <?php echo ($currentType === 'Personal') ? '#3f51b5' : '#6c757d'; ?>; color: white; border-radius: 4px;">
                Personal Todo
             </a>
             <a href="index.php?type=Shared" 
                class="btn" 
-               style="flex: 1; text-align: center; text-decoration: none; display: inline-block; padding: 10px 8px; white-space: nowrap; font-size: 0.85rem; background-color: <?php echo ($currentType === 'Shared') ? '#3f51b5' : '#6c757d'; ?>; color: white; border-radius: 4px;">
+               style="flex: 1; text-align: center; text-decoration: none; display: block; padding: 10px 8px; white-space: nowrap; font-size: 0.85rem; background-color: <?php echo ($currentType === 'Shared') ? '#3f51b5' : '#6c757d'; ?>; color: white; border-radius: 4px;">
                Shared Todo
             </a>
         </div>
     </div>
     
     <!-- Card Komponen Form -->
-    <div class="form-component">
-        <h2>Create New Todo</h2>
+    <div class="form-component" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <h2 style="margin-top: 0;">Create New Todo</h2>
         <form action="process.php" method="POST" enctype="multipart/form-data">
              <div class="form-group">
                  <label for="title">Title</label>

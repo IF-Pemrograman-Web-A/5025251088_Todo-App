@@ -237,3 +237,29 @@ window.selectTodo = (id) => {
     selectedTodoId = id;
     renderTodos();
 };
+
+let deferredPrompt;
+const installBtn = document.getElementById('install-btn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    if (installBtn) {
+        installBtn.style.display = 'block';
+    }
+});
+
+if (installBtn) {
+    installBtn.addEventListener('click', () => {
+        installBtn.style.display = 'none';
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('User menginstall PWA');
+                }
+                deferredPrompt = null;
+            });
+        }
+    });
+}

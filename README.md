@@ -20,12 +20,24 @@ Menambahkan manipulasi DOM dengan JavaScript untuk fungsionalitas Todo App (tamb
 * Operasi CRUD (Create, Read, Update/Mark as Done, Delete) berbasis PHP.
 * Fitur pengunggahan gambar (*File Handling*) yang tersimpan otomatis di folder `uploads`.
 
+**Fitur Baru (E05 - The Offline Abyss):**
+* Mengubah Todo App menjadi Progressive Web App (PWA) dengan `manifest.json` dan maskable icons.
+* Menerapkan Service Worker (`sw.js`) untuk *precaching app shell* dan halaman offline fallback (`offline.html`).
+* Menerapkan strategi *caching* (Network-First untuk halaman, Cache-First untuk aset statis).
+* Menambahkan fungsionalitas instalasi PWA.
+
+**Bukti Pengujian Offline (Cache Storage):**
+**Bukti DevTools & Pengujian Offline:**
+
+![Validasi Manifest](image-1.png)
+![Service worker](image-2.png)
+![Cache Storage](image-3.png)
+![Simulasi Offline](image-4.png)
+
 **Preview UI**
 * **Dekstop:**
 * <img width="1917" height="863" alt="image" src="https://github.com/user-attachments/assets/d123b235-8a59-4f87-b502-ba56d78b8317" />
 
-* **Dekstop dengan PHP:**
-* ![alt text](image.png)
 
 * **Mobile:**
 * <img width="727" height="1600" alt="Mobile Todo List" src="https://github.com/user-attachments/assets/b51a930e-0741-4870-be6d-a711f597c1d4" />
