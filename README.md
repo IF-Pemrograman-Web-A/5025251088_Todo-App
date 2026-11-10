@@ -26,6 +26,13 @@ Menambahkan manipulasi DOM dengan JavaScript untuk fungsionalitas Todo App (tamb
 * Menerapkan strategi *caching* (Network-First untuk halaman, Cache-First untuk aset statis).
 * Menambahkan fungsionalitas instalasi PWA.
 
+**Fitur Baru (E06 - The Endpoint of Portals):**
+* Migrasi struktur backend menjadi RESTful API (`api.php`).
+* Implementasi HTTP Methods: `GET` (Read), `POST` (Create), `PUT`/`PATCH` (Update), dan `DELETE` (Hapus).
+* Implementasi Status Code HTTP yang sesuai (200 OK, 201 Created).
+* Implementasi Error Status Code (400 Bad Request, 401 Unauthorized, 404 Not Found, 405 Method Not Allowed, 500 Server Error).
+* Menambahkan Authentication API Key (`x-api-key`) pada headers untuk keamanan akses endpoint.
+
 **Bukti Pengujian Offline (Cache Storage):**
 **Bukti DevTools & Pengujian Offline:**
 
@@ -33,6 +40,10 @@ Menambahkan manipulasi DOM dengan JavaScript untuk fungsionalitas Todo App (tamb
 ![Service worker](image-2.png)
 ![Cache Storage](image-3.png)
 ![Simulasi Offline](image-4.png)
+
+**Bukti Pengujian REST API (Postman):**
+![Bukti 200 OK](image-6.png)
+![Bukti 401 Unauthorized](image-5.png)
 
 **Preview UI**
 * **Dekstop:**
